@@ -1,0 +1,42 @@
+
+Error:
+    cannot unpack non-iterable int object
+Solved by:
+    key=dict.get   is right
+    key=dict.get() is wrong
+
+Error:
+    TypeError: cannot unpack non-iterable numpy.int32 object
+Solved by:
+    count_value only return v is right, delete _
+
+Error:
+    RecursionError: maximum recursion depth exceeded while calling a Python object
+Solved by:
+    Consider conditions that both side can't move
+
+Error:
+    'user choice: {}'.format(list(i))) TypeError: 'NoneType' object is not iteration
+Solved by:
+    consider about conditions no legal move at start
+
+Error:
+    TypeError: Alpha_Beta() missing 1 required positional argument: 'legal'
+Solved by:
+    add legal = 1 to
+'best_chess, best_v = self.Alpha_Beta(max_branches, -sy
+s.maxsize-1, sys.maxsize, chessboard, self.color, 1)'
+
+Error:
+    wrong answer
+Solved by:
+    initial legal = 0
+
+
+filps 未更新
+board 未还原
+
+=   不是新建 而是赋给地址
+np.copy()复制
+
+分前中后期
